@@ -70,6 +70,7 @@ To set up the autograder on your Ubuntu guest
 1. If your laptop gets lost/stolen/broken, you can `ssh beagle` (the hostname is subject to change) to connect to one of the boards
 1. You'll need to run the autograder setup steps from above in order to test your solutions
 1. The BeagleV-Ahead boards are shared between Prof. Benson's CS 631 sections and our CS 315 sections. This may create contention -- we'll see.
+1. I **strongly** recommend that you commit and push to github frequently so that if disaster strikes your laptop, you can just clone on a beagle host and continue working.
 
 ## Rubric
 
