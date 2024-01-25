@@ -62,6 +62,10 @@ To set up the autograder on your Ubuntu guest
     export PATH=~/autograder:$PATH
     ```
     Be careful not to add spaces around the `=`
+1. Set the new value of `PATH` in the shell environment
+    ```text
+    source ~/.bashrc
+    ```
 
 ## BeagleV-Ahead boards
 
