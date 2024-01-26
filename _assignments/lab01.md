@@ -32,7 +32,7 @@ Here is a sample `Makefile`:
 
 ```make
 PROG = lab01
-OBJS = lab01.o
+OBJS = hello.o
 
 %.o: %.c
 	gcc -c -g -o $@ $<
