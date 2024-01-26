@@ -36,5 +36,5 @@ We will demonstrate a framework for compiling C and assembly language source fil
 
 ## Rubric
 
-1. Your lab will receive the score indicated by the autograder
-1. To get the test cases, `git pull` in the tests repo
+1. 100 points as shown by autograder running on ubuntu/riscv64
+
