@@ -2,7 +2,7 @@
 layout: assignment
 due: 2024-02-05 23:59:59 -0800
 github_url: https://classroom.github.com/a/sm-h_iPm
-published: false
+published: true
 ---
 
 ## Requirements
