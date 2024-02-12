@@ -2,7 +2,7 @@
 layout: assignment
 due: 2024-02-20 23:59:59 -0800
 github_url: https://classroom.github.com/a/Ptkzrdux
-published: false
+published: true
 ---
 
 ## Requirements
