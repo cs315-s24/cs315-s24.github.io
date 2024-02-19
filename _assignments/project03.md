@@ -7,8 +7,9 @@ github_url: https://classroom.github.com/a/ba5wc5CO
 ## Requirements
 
 1. You will develop RISC-V assembly language implementations of the following problems, and print the results to ensure that both the C implementation and your RISC-V implementation compute the correct answer.
-1. Your executables must be named as follows, and must be compiled with a `Makefile`
+1. Your executables must be named as follows. A `Makefile` is provided in the given repo.
 1. We will test your projects using autograder
+1. Automatically-generated code using a C compiler or generative AI (Chat GPT etc.) is not acceptable. You must develop the programs yourself.
 
 **pack_bytes**
 
@@ -64,21 +65,21 @@ Given a 32-bit unsigned integer, extract a sequence of bits and return as a sign
     C: -6
     Asm: -6
 
-**merge**
+**str_to_int**
 
-Given the array length followed by an array containing two sub-arrays in sorted order, merge combines the sub-arrays
+Given an input number and base, convert the string to an integer. The given code prints the integer in base 10 using `printf()`
 
-    $./merge 6 1 3 5 2 4 6
-    C: 1 2 3 4 5 6
-    Asm: 1 2 3 4 5 6
+    $./str_to_int 0xff -o 10
+    C: 255
+    Asm: 255
 
-**merge_sort**
+**int_to_str**
 
-Given the array length followed by array values, merge_sort recursively sorts the array in ascending order.
+Given an input number and base, use the given `str_to_int_c()` implementation to get an integer. You will implement `int_to_str_s` to convert the integer into its string representation.
 
-    $ ./merge_sort 6 6 4 1 2 5 3
-    C: 1 2 3 4 5 6
-    Asm: 1 2 3 4 5 6
+    $ ./int_to_str 0xff -o 2
+    C: 0b11111111
+    Asm: 0b11111111
 
 ## Given
 
@@ -86,6 +87,6 @@ The starter repo contains C implementations for each of the programs
 
 ## Rubric
 
-1. 80 points: automated test cases
+1. 80 points: automated test cases. You may need to `git pull` in the tests repo.
 1. 5 points: clean repo (no build products) which compiles and links successfully
 1. 15 points: code quality: consistent formatting, no dead or redundant code, no unnecessarily complex code, readable comments
