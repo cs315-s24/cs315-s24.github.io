@@ -31,7 +31,7 @@ published: true
     1. illustrate a direct-mapped cache and describe the data structures and algorithms required for a set-associative cache
     1. We have written a [Guide to Cache Memory]({{ site.url }}/guides/cache-memory.html) to help you develop your cache implementation
 1. In-class coding will be pushed to Github. You will provide the rest of the code yourself
-1. Watch CampusWire for updated test cases for the emulation targets
+1. You will need to `git pull` in the tests repo to get this semester's test cases
 
 ## Grading Rubric
 **Automated testing**
