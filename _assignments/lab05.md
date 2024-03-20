@@ -1,8 +1,8 @@
 ---
 layout: assignment
-due: 2023-03-25 23:59:59 -0800
+due: 2024-03-25 23:59:59 -0800
 github_url: https://classroom.github.com/a/qixL2lVT
-published: false
+published: true
 ---
 
 {% assign img_base = site.url | append: site.baseurl | append: "/assets/img" %}
