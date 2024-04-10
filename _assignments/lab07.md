@@ -39,7 +39,7 @@ published: true
     ```
 ## Given
 
-1. You may use any of the circuits shown in the [Project 06 Guide Part 2]({{ site.url }}/guides/project06-2.html)
+1. You may use any of the circuits shown in the [Project 06 Guide Part 2]({{ site.url }}/guides/project06-part-2.html)
 1. You may use any of Digital's built-in components, or your own if you prefer.
 
 ## Rubric
