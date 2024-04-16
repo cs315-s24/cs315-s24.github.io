@@ -2,14 +2,14 @@
 layout: assignment
 due: 2024-04-22 23:59:59 -0800
 github_url: https://classroom.github.com/a/lF_TbEG-
-published: false
+published: true
 ---
 
 ## Due 
 
 1. Submit all of the .dig files and .hex files required to run your processor implementation
 1. Submit a PDF for your Decoder spreadsheet
-1. Interactive grading will take place on Wed 4/25. You will sign up for a grading slot using the signup sheet link provided in Campuswire.
+1. Interactive grading will be scheduled on Wed 4/24. The signup link will be given in Campus Wire.
 
 ## Requirements
 
@@ -17,10 +17,10 @@ published: false
     1. You may use any of Digital's library of components
     1. We will introduce some new and useful tools and techniques for Digital in lecture
 1. You need to pass unit tests and complete program tests provided below. Note that the complete program requirements are the same as for Project04. The unit tests will help you incrementally build and test your processor. We will provide a starter instruction memory with the unit tests and the complete program tests from Project04.
-1. In order to make your own programs for testing runnable on your processor you must do the following:
-    1. You will add an assembly language main to set up at least five parameters for your functions
-    1. You will add the end marker (`unimp`) to indicate when the program should stop
-    1. Ensure that you do not have `.global` directives in your programs
+1. In order to make the given functions for testing runnable on your processor the given files contain these changes:
+    1. A `main` function at the top of the file (offset 0)
+    1. The end marker (`unimp`) indicates when the program should stop
+    1. No `.global` or `.align 4` directives should be present in the programs
 1. Your processor implementation will include the following major sub-circuits:
     1. The Program Counter (`PC`) will be one 64-bit register with enable (`EN`) and clear (`CLR`) inputs.
     1. Machine code programs will be stored in ROM components, just as we did in Project05. Like in Project05 your instruction memory will be able to select the program you want to execute.
@@ -42,6 +42,8 @@ published: false
 
 **Unit  Tests**
 
+The ROMs for these tests contains the necessary machine code
+
 - 00-add-r
 - 01-add-i
 - 02-sll-r
@@ -61,12 +63,16 @@ published: false
 
 **Complete  Program Tests**
 
+You must add (using `as`, `objdump`, and `makerom3.py`) the machine code to these ROMs
+
 - 16-quadratic
 - 17-get_bitseq
 - 18-max3
 - 19-fib-rec
-- 20-sort_s (and find_max_index_s)
-- 21-merge_sort_s (and merge_s)
+- 20-is-pal
+- 21-to-upper
+- 22-sort
+- 23-str-to-int
 
 ## Rubric
 For interactive grading you should be able to run the autograder tests and manually execute your sort_s and merge_sort_s programs.
