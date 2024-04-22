@@ -2,7 +2,7 @@
 layout: assignment
 due: 2024-05-07 23:59:59 -0800
 github_url: https://classroom.github.com/a/f-Pq33x8
-published: false
+published: true
 ---
 
 ## Due
